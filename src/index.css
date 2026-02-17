@@ -32,6 +32,10 @@ body {
   font-weight: 700;
 }
 
+h1 {
+  font-size: clamp(1.4rem, 5vw, 2rem);
+}
+
 form {
   display: flex;
   gap: 0.75rem;
@@ -372,5 +376,12 @@ body[data-theme="dark"] .completed {
   .app {
     margin: 1rem;
     padding: 1.5rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation: none !important;
+    transition: none !important;
   }
 }
